@@ -1,11 +1,16 @@
-body {
-    background-color: #dbd5b3;   
+body {   
     font-family: 'Bai Jamjuree', sans-serif;
+    background-image: url(../img/rm347-porpla-02-a-01.jpg);
+    background-size: 50%;
+}
+
+.cartao:hover .cartao__conteudo {
+    transform: rotateY(180deg);
 }
 
 footer {
-    background-color: #a39961;
-    color: #292929;
+    background-color: #3a3a3a;
+    color: #e0e0e0;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -21,29 +26,41 @@ footer p{
 
 #container{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+     padding: 4rem;
+       gap: 3rem;
 }
 .cartao {
     margin: 1rem 1rem;
-    background-color: #497165;
+    background-color: #3481ad;
     height: 20rem;
     width: 20rem;
     flex-grow: 1;
     flex-basis: calc(33% -6rem);
 }
 .cartao__conteudo {
+    background-color: var(--card-front-color);
     text-align: center;
     height: 100%;
-    background-color: var(--card-front-color);
+    transform-style: preserve-3d;
+    transition: transform 300ms ease-in-out;
+}
+.cartao__conteudo p {
+    margin-top: 1rem;
+    padding: 2rem;
+    margin-top: 4rem;
 }
 .cartao__conteudo h3 {
-    color: var(--text-color);
+    color: var(--matéria);
     border: 1px solid var(--text-color);
     text-align: left;
     padding: 0.5rem;
     position: absolute;
     margin: 0.6rem;
     border-radius: 0.6rem;
-    font-size: 1vw;
+    font-size: 1.2vw;
+     backface-visibility: hidden;
 }
 .cartao__conteudo__pergunta p{
     color: var(--text-color);
@@ -53,15 +70,29 @@ footer p{
     color: var(--card-back-color);
     font-weight: 700;
 }
+.cartao:hover .cartao__conteudo {
+    transform: rotateY(180deg);
+}
+.cartao__conteudo__pergunta,
+.cartao__conteudo__resposta {
+    backface-visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.cartao__conteudo__resposta {
+    transform: rotateY(180deg);
+}
 
 :root{
-    --Título: #1D4027;
-    --História: #1D403A
+    --Título: #000000;
+    --História: #000000;
 }
 :root {
-    --text-color: #000000;
-    --card-front-color: #ada346;
-    --card-back-color: #8f914b;
+    --text-color: #cfcfcf;
+    --card-front-color: #575757;
+    --card-back-color: #adadad;
+    --matéria: #FFFFFF;
 }
 
 header h1 {
