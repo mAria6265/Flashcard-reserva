@@ -1,10 +1,11 @@
 body {
-    background: url('img/bg-desktop.webp');
-    font-family: Bai Jamjuree ;
+    background-color: #dbd5b3;   
+    font-family: 'Bai Jamjuree', sans-serif;
 }
+
 footer {
-    background-color: #497165;
-    color: rgb(33, 51, 45);
+    background-color: #a39961;
+    color: #292929;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -48,16 +49,19 @@ footer p{
     color: var(--text-color);
     font-weight: 500;
 }
-
+.cartao__conteudo__resposta p{
+    color: var(--card-back-color);
+    font-weight: 700;
+}
 
 :root{
     --Título: #1D4027;
     --História: #1D403A
 }
 :root {
-    --text-color: #494d4b;
-    --card-front-color: #36664e;
-    --card-back-color: #065f41;
+    --text-color: #000000;
+    --card-front-color: #ada346;
+    --card-back-color: #8f914b;
 }
 
 header h1 {
