@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(105, 148, 135);
+    background: url('img/bg-desktop.webp');
+    font-family: Bai Jamjuree ;
 }
 footer {
     background-color: #497165;
@@ -28,12 +29,14 @@ footer p{
     flex-grow: 1;
     flex-basis: calc(33% -6rem);
 }
-    .cartao__conteudo {
+.cartao__conteudo {
     text-align: center;
     height: 100%;
+    background-color: var(--card-front-color);
 }
 .cartao__conteudo h3 {
-    background-color: #34695E;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
     text-align: left;
     padding: 0.5rem;
     position: absolute;
@@ -41,11 +44,20 @@ footer p{
     border-radius: 0.6rem;
     font-size: 1vw;
 }
+.cartao__conteudo__pergunta p{
+    color: var(--text-color);
+    font-weight: 500;
+}
 
 
 :root{
     --Título: #1D4027;
     --História: #1D403A
+}
+:root {
+    --text-color: #494d4b;
+    --card-front-color: #36664e;
+    --card-back-color: #065f41;
 }
 
 header h1 {
